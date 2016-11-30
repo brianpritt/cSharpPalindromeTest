@@ -11,13 +11,20 @@ namespace PalindromeChecker.Objects
     {
       this.Word = word;
     }
-    public string IsPalindrome()
+    public bool IsPalindrome()
     {
-      char[] wordArray = this.Word.ToCharArray();
+      string newWord = this.Word.Replace(" ", "");
+      char[] wordArray = newWord.ToCharArray();
       Array.Reverse(wordArray);
       string reverseWord =new string(wordArray);
-      Console.WriteLine(reverseWord);
-      return reverseWord;
+      Console.WriteLine(reverseWord.ToLower());
+      Console.WriteLine(newWord.ToLower());
+
+      if (newWord.ToLower() == reverseWord.ToLower())
+      {
+        return true;
+      }
+      return false;
     }
   }
 }
