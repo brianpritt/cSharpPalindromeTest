@@ -1,7 +1,7 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
-using Palindrome.Objects;
+using PalindromeChecker.Objects;
 
 namespace  PalindromeChecker
 {
@@ -11,10 +11,11 @@ namespace  PalindromeChecker
     public void IsPalindromeReverseWord_true()
     {
       //Arrange
-      string word = "racecar";
+      string word = "Dog";
+      Palindrome newPalindrome = new Palindrome(word);
       //Act
       //Assert
-      Assert.Equal(true, TEMPLATE);
+      Assert.Equal("goD", newPalindrome.IsPalindrome());
     }
   }
 }

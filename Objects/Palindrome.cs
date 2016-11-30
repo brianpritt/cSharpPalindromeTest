@@ -6,16 +6,18 @@ namespace PalindromeChecker.Objects
   public class Palindrome
   {
     public string Word {get; set;}
-    private List<string> TEMPLATE = new List<string> {};
 
-    public Palindrome(word)
+    public Palindrome(string word)
     {
       this.Word = word;
     }
     public string IsPalindrome()
     {
-      char[] wordArray = this.Word.ToCharArray()
-      Array.ReverseArray(wordArray);
+      char[] wordArray = this.Word.ToCharArray();
+      Array.Reverse(wordArray);
+      string reverseWord =new string(wordArray);
+      Console.WriteLine(reverseWord);
+      return reverseWord;
     }
   }
 }
