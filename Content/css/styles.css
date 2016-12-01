@@ -5,3 +5,7 @@
 h1, h5 {
   text-align: center;
 }
+
+input {
+  margin-bottom: 10px;
+}
