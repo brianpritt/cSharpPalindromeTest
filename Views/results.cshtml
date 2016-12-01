@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/../Content/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/../Content/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Palindrome CheckerE</title>
+  </head>
+  <div class="jumbotron">
+    <h1>Palindrome Checker</h1>
+    <img src="../Content/css/weirdAl2.jpg" alt="a picture of Weird Al">
+  </div>
+  <body>
+    @if(Model.Truthy == true)
+    {
+      <h1>@Model.Word is a palindrome</h1>
+    }else
+    {
+      <h1>@Model.Word is NOT a palindrome</h1>
+    }
+    <h5><a href="/">Check Another</a></h5><br>
+  </body>
+</html>

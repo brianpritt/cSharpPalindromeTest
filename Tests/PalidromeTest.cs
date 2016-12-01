@@ -27,5 +27,15 @@ namespace  PalindromeChecker
       //Assert
       Assert.Equal(true, newPalindrome.IsPalindrome());
     }
+    [Fact]
+    public void IsPalindrome_RemovePunctuation_true()
+    {
+      //Arrange
+      string phrase = "God! A red nugget! A fat egg under a dog!";
+      Palindrome newPalindrome = new Palindrome(phrase);
+      //Act
+      //Assert
+      Assert.Equal(true, newPalindrome.IsPalindrome());
+    }
   }
 }
